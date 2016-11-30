@@ -145,7 +145,7 @@ img
 		&.fa
 			font-size: 13px
 		&_right
-			margin-right: 0
+			margin-right: -4px
 			margin-left: 10px
 			
 .title
@@ -536,6 +536,7 @@ img
 			margin-top: 25px
 			+circe-regular
 			font-size: 16px
+			line-height: 1.25
 			color: #8f8f8f
 			text-align: center
 	
@@ -559,8 +560,20 @@ img
 	&__text
 		margin-top: 38px
 		color: #313131
+		&-word
+			+circe-regular
+		&-bold
+			display: block
+			+circe-bold
 		& + &
 			margin-top: 17px
+	&__info
+		margin-top: 30px
+		margin-bottom: -10px
+		font-size: 17px
+		&-bold
+			display: block
+			+circe-bold
 	&__row
 		display: table
 		width: calc(100% + 40px)
