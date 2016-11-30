@@ -1,0 +1,98 @@
+$icons: (0:0)
+$icons: map-merge($icons,(arrow-left: (X: -106px, Y:0px, W: 81px, H: 23px, TW: 187px, TH: 147px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(arrow-right: (X: -106px, Y:-27px, W: 81px, H: 23px, TW: 187px, TH: 147px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(eco-1: (X: -41px, Y:-98px, W: 35px, H: 49px, TW: 187px, TH: 147px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(eco-2: (X: -106px, Y:-54px, W: 49px, H: 36px, TW: 187px, TH: 147px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(eco-3: (X: 0px, Y:-98px, W: 37px, H: 49px, TW: 187px, TH: 147px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(eco-4: (X: 0px, Y:0px, W: 49px, H: 49px, TW: 187px, TH: 147px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(eco-5: (X: 0px, Y:-53px, W: 49px, H: 41px, TW: 187px, TH: 147px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(eco-6: (X: -53px, Y:0px, W: 49px, H: 49px, TW: 187px, TH: 147px, IMG: '../img/icons.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+	$icon: map-get($icons, $icon)
+	@return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	width: icon-attr($iconName, W)
+	height: icon-attr($iconName, H)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	$width: icon-attr($iconName, W)
+	$height: icon-attr($iconName, H)
+	width: $width/2
+	height: $height/2
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+	$tw: icon-attr($iconName, TW) 	
+	$th: icon-attr($iconName, TH)
+	background-size: $tw/2 $th/2
+@mixin sprite-position-retina($iconName)
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+
+
+@mixin s($i)
+	+sprite($i)
+@mixin sp($i)
+	+sprite-position($i)
+@mixin sr($i)
+	+sprite-retina($i)
+@mixin spr($i)
+	+sprite-position-retina($i)
+
+.icon-arrow-left
+	width: 81px
+	height: 23px
+	background-image: url('../img/icons.png')
+	background-position: -106px 0px
+	background-size: 187px 147px
+.icon-arrow-right
+	width: 81px
+	height: 23px
+	background-image: url('../img/icons.png')
+	background-position: -106px -27px
+	background-size: 187px 147px
+.icon-eco-1
+	width: 35px
+	height: 49px
+	background-image: url('../img/icons.png')
+	background-position: -41px -98px
+	background-size: 187px 147px
+.icon-eco-2
+	width: 49px
+	height: 36px
+	background-image: url('../img/icons.png')
+	background-position: -106px -54px
+	background-size: 187px 147px
+.icon-eco-3
+	width: 37px
+	height: 49px
+	background-image: url('../img/icons.png')
+	background-position: 0px -98px
+	background-size: 187px 147px
+.icon-eco-4
+	width: 49px
+	height: 49px
+	background-image: url('../img/icons.png')
+	background-position: 0px 0px
+	background-size: 187px 147px
+.icon-eco-5
+	width: 49px
+	height: 41px
+	background-image: url('../img/icons.png')
+	background-position: 0px -53px
+	background-size: 187px 147px
+.icon-eco-6
+	width: 49px
+	height: 49px
+	background-image: url('../img/icons.png')
+	background-position: -53px 0px
+	background-size: 187px 147px

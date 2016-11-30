@@ -1,0 +1,340 @@
++font('FixedsysExcelsiorIIIb','FixedsysExcelsiorIIIb')
++font('Circe-Bold','Circe-Bold')
++font('Circe-Light','Circe-Light')
++font('Circe-Regular','Circe-Regular')
++font('FuturaPT-Bold','FuturaPT-Bold')
++font('PlayfairDisplay-Regular','PlayfairDisplay-Regular')
+
+// fonts
+$default-fonts: Arial, sans-serif
+
+=fixedsys
+	font-family: 'FixedsysExcelsiorIIIb', $default-fonts
+=circe-bold
+	font-family: 'Circe-Bold', $default-fonts
+=circe-light
+	font-family: 'Circe-Light', $default-fonts
+=circe-regular
+	font-family: 'Circe-Regular', $default-fonts
+=futura-bold
+	font-family: 'FuturaPT-Bold', $default-fonts
+=play-regular
+	font-family: 'PlayfairDisplay-Regular', $default-fonts
+
+// colors
+// $black: #000
+
+=trs
+	transition: all 0.25s
+
+=smooth
+	-webkit-font-smoothing: antialiased
+
+
+/* ===================================
+	 Main Styles
+	 =================================== */
+body
+	position: relative
+	min-width: 320px
+	+circe-light
+	font-size: 19px
+	color: #323232
+	line-height: 1.4
+
+.wrapper
+	position: relative
+	overflow: hidden
+	margin: 0 auto
+	min-height: 100%
+
+.container
+	margin: 0 auto
+	padding: 0 20px
+	max-width: 1380px
+
+
+/* Helpers
+	----------------------------------- */
+button
+	background-color: transparent
+
+a:hover, a:focus
+	text-decoration: none
+
+a
+	color: inherit
+	text-decoration: none
+
+table
+	vertical-align: top
+
+img
+	max-width: 100%
+	vertical-align: top
+
+.icon
+	display: inline-block
+	vertical-align: middle
+
+.text-left
+	text-align: left
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+.is-hidden
+	display: none
+
+.vertical
+	display: inline-block
+	vertical-align: middle
+
+.cfx
+	+pie-clearfix
+
+// *
+// 	+selection
+// 		color: #fff
+// 		background-color: $red
+
+.btn
+	display: inline-block
+	padding: 15px 20px 12px
+	+circe-bold
+	font-size: 15px
+	color: #ffffff
+	background-color: #004281
+	border: 2px solid #004281
+	border-radius: 3px
+	text-transform: uppercase
+	letter-spacing: 0.04em
+	+trs
+	&:hover
+		background-color: darken(#004281,10)
+		border-color: darken(#004281,10)
+	&_light
+		background-color: #0068cc
+		border-color: #0068cc
+		&:hover
+			background-color: darken(#0068cc,10)
+			border-color: darken(#0068cc,10)
+	&_white
+		color: #ffffff
+		background-color: transparent
+		border-color: #ffffff
+		&:hover
+			color: #004281
+			background-color: #ffffff
+			border-color: #ffffff
+	&__fa
+		margin-right: 10px
+		&_right
+			margin-right: 0
+			margin-left: 10px
+
+/* ===================================
+	 Header
+	 =================================== */
+.header
+	position: fixed
+	z-index: 100
+	top: 0
+	left: 0
+	right: 0
+	&__top
+		padding-top: 13px
+		padding-bottom: 11px
+		font-size: 15px
+		color: #ffffff
+		background-color: #004281
+		+pie-clearfix
+		&-text
+			float: left
+	&__socials
+		float: right
+	&__bottom
+		padding-top: 20px
+		padding-bottom: 20px
+		background-color: #ffffff
+		+pie-clearfix
+		&-logo
+			float: left
+			padding: 4px 8px 2px
+			margin-left: 10px
+			color: #004281
+			font-size: 14px
+			border: 1px solid #004281
+		&-nav
+			margin-top: 6px
+			float: right
+			
+.nav
+	font-size: 0
+	+pie-clearfix
+	&__link
+		display: inline-block
+		vertical-align: middle
+		margin: 0 10px
+		+circe-regular
+		font-size: 14px
+		color: #0068cc
+		+trs
+		&.is-active,
+		&:hover
+			color: #004281
+	
+.socials
+	+pie-clearfix
+	&__item
+		float: left
+		margin-left: 20px
+		font-size: 15px
+	&__fa
+		margin-right: 5px
+		color: #659fff
+		.fa-phone
+			position: relative
+			top: 2px
+
+
+/* ===================================
+	 Footer
+	 =================================== */
+.footer
+
+
+/* ===================================
+	 Main
+	 =================================== */
+.main
+	padding-top: 112px
+	
+/* Screen
+	----------------------------------- */
+.screen
+	padding-top: 140px
+	padding-bottom: 140px
+	background: url(../img/bg/screen.jpg) center center no-repeat
+	background-size: cover
+	.screen__inner
+		margin-left: 120px
+	&__title
+		font-size: 34px
+		color: #004281
+		&-color
+			display: block
+			margin-top: -5px
+			+circe-bold
+			font-size: 46px
+			letter-spacing: -0.04em
+	&__list
+		margin-top: 20px
+		margin-bottom: 40px
+		font-size: 21px
+		line-height: 1.52
+		&-fa
+			margin-right: 12px
+			color: #b22257
+			&.fa
+				font-size: 13px
+	&__row
+		+pie-clearfix
+	&__btn
+		& + &
+			margin-left: 20px
+			
+/* Eco
+	----------------------------------- */
+.eco
+	padding-top: 75px
+	padding-bottom: 90px
+	&__title
+		+circe-bold
+		font-size: 34px
+		color: #004281
+		text-align: center
+		&-color
+			display: block
+			margin-top: -7px
+			+circe-light
+	&__list
+		max-width: 900px
+		margin-top: 5px
+		margin-left: auto
+		margin-right: auto
+		font-size: 0
+		&-item
+			display: inline-block
+			vertical-align: top
+			margin-top: 30px
+			width: 33.33%
+			text-align: center
+			font-size: 19px
+			line-height: 1.25
+			&:nth-child(3n - 1)
+				position: relative
+				left: 5px
+			&:nth-child(3n)
+				position: relative
+				left: -15px
+		&-icon
+			height: 75px
+			+vertical
+		&-text
+			margin-left: auto
+			margin-right: auto
+		&-item:nth-child(1) &-text
+			max-width: 275px
+		&-item:nth-child(2) &-text
+			max-width: 195px
+		&-item:nth-child(3) &-text
+			max-width: 170px
+		&-item:nth-child(4) &-text
+			max-width: 210px
+		&-item:nth-child(5) &-text
+			max-width: 150px
+		&-item:nth-child(6) &-text
+			max-width: 145px
+	
+/* Feed
+	----------------------------------- */
+.feed
+	padding-top: 50px
+	padding-bottom: 55px
+	background-color: #0068cc
+	&__title
+		+circe-regular
+		font-size: 29px
+		line-height: 1.41
+		text-transform: uppercase
+		text-align: center
+		color: #ffffff
+		&-color
+			display: block
+			+circe-bold
+	&__btn
+		position: relative
+		margin-top: 25px
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			top: 15px
+		&:before
+			+s(arrow-right)
+			right: 100%
+			margin-right: 30px
+		&:after
+			+s(arrow-left)
+			left: 100%
+			margin-left: 30px
+			
+
+/* ===================================
+	 Other Styles
+	 =================================== */
+
