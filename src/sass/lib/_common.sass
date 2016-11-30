@@ -124,8 +124,6 @@ img
 	&:hover
 		background-color: darken(#004281,10)
 		border-color: darken(#004281,10)
-	&_sm
-		padding: 12px 20px 8px
 	&_light
 		background-color: #0068cc
 		border-color: #0068cc
@@ -527,13 +525,74 @@ img
 	padding-top: 70px
 	padding-bottom: 75px
 	background-color: #fafbfb
+	&__list
+		+pie-clearfix
 	&__card
 		margin-left: 20px
 		margin-right: 20px
+		width: 370px
+		float: left
+		&-desc
+			margin-top: 25px
+			+circe-regular
+			font-size: 16px
+			color: #8f8f8f
+			text-align: center
 	
 .card
-	width: 370px
+	padding: 40px 40px 60px
+	text-align: center
+	font-size: 16px
+	line-height: 1.25
 	border: 3px solid #0068cc
+	&__rate
+		font-size: 15px
+		color: #0068cc
+	&__title
+		+circe-bold
+		color: #0068cc
+		font-size: 20px
+	&__subtitle
+		margin-top: 22px
+		+circe-bold
+		color: #313131
+	&__text
+		margin-top: 38px
+		color: #313131
+		& + &
+			margin-top: 17px
+	&__row
+		display: table
+		width: calc(100% + 40px)
+		margin-left: -20px
+		margin-right: -20px
+		margin-top: 50px
+		table-layout: fixed
+	&__col
+		display: table-cell
+		width: 33.33%
+	&__number
+		+circe-bold
+		font-size: 33px
+		color: #0068cc
+		&-desc
+			margin-top: -4px
+			+circe-regular
+			font-size: 16px
+			color: #0068cc
+		&-info
+			margin-top: 11px
+			+circe-bold
+			font-size: 10px
+			color: #0e8c11
+			&-color
+				display: block
+	&__btn
+		margin-top: 47px
+		font-size: 12px
+		.fa
+			font-size: 11px
+			top: 0
 
 /* About
 	----------------------------------- */
