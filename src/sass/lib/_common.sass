@@ -54,6 +54,13 @@ body
 	max-width: 1380px
 	+pie-clearfix
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-weight: normal
 
 /* Helpers
 	----------------------------------- */
@@ -110,13 +117,15 @@ img
 	color: #ffffff
 	background-color: #004281
 	border: 2px solid #004281
-	border-radius: 3px
+	border-radius: 5px
 	text-transform: uppercase
 	letter-spacing: 0.04em
 	+trs
 	&:hover
 		background-color: darken(#004281,10)
 		border-color: darken(#004281,10)
+	&_sm
+		padding: 12px 20px 8px
 	&_light
 		background-color: #0068cc
 		border-color: #0068cc
@@ -174,6 +183,7 @@ img
 		+pie-clearfix
 		&-text
 			float: left
+			font-size: inherit
 	&__socials
 		float: right
 	&__bottom
@@ -338,6 +348,7 @@ img
 	&__row
 		+pie-clearfix
 	&__btn
+		border-radius: 3px
 		& + &
 			margin-left: 20px
 			
@@ -509,6 +520,20 @@ img
 			max-width: 370px
 		&-item:nth-child(3) &-text
 			max-width: 335px
+			
+/* Rate
+	----------------------------------- */
+.rate
+	padding-top: 70px
+	padding-bottom: 75px
+	background-color: #fafbfb
+	&__card
+		margin-left: 20px
+		margin-right: 20px
+	
+.card
+	width: 370px
+	border: 3px solid #0068cc
 
 /* About
 	----------------------------------- */
