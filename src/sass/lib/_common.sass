@@ -230,15 +230,24 @@ img
 /* Screen
 	----------------------------------- */
 .screen
+	overflow: hidden
 	position: relative
 	padding-top: 140px
 	padding-bottom: 140px
-	background: url(../img/bg/screen.jpg) center top no-repeat
-	background-size: 100% auto
-	.screen__inner
+	&__bg
+		position: absolute
+		z-index: 1
+		top: 0
+		left: 0
+		right: 0
+		height: 100%
+		background: url(../img/bg/screen.jpg) center top no-repeat
+		background-size: cover
+	&__container
 		position: relative
-		margin-left: 120px
 		z-index: 2
+	.screen__inner
+		margin-left: 120px
 	&__title
 		font-size: 34px
 		color: #004281
