@@ -133,6 +133,10 @@ img
 			border-color: #ffffff
 	&__fa
 		margin-right: 10px
+		position: relative
+		top: -1px
+		&.fa
+			font-size: 13px
 		&_right
 			margin-right: 0
 			margin-left: 10px
@@ -180,7 +184,7 @@ img
 		&-logo
 			float: left
 			padding: 4px 8px 2px
-			margin-left: 10px
+			margin-left: 14px
 			color: #004281
 			font-size: 14px
 			border: 1px solid #004281
@@ -194,10 +198,11 @@ img
 	&__link
 		display: inline-block
 		vertical-align: middle
-		margin: 0 10px
+		margin: 0 13px
 		+circe-regular
 		font-size: 14px
 		color: #004281
+		letter-spacing: 0.06em
 		+trs
 		&:hover
 			color: #0068cc
@@ -221,10 +226,12 @@ img
 			position: relative
 			top: 2px
 	&_about &__item
-		margin-left: 30px
+		margin-left: 0
 		+circe-regular
 		font-size: 22px
 		color: #000000
+	&_about &__item + &__item
+		margin-left: 45px
 	&_about &__item:last-child
 		color: #1a1e38
 	&_about &__fa
@@ -278,6 +285,7 @@ img
 			+fixedsys
 			font-size: 12px
 			color: #111111
+			letter-spacing: 0.16em
 			&-color
 				color: #004281
 
@@ -398,10 +406,10 @@ img
 	&__man
 		position: absolute
 		z-index: 1
-		left: 75px
+		left: 100px
 		bottom: -55px
 	&__content
-		margin-left: 330px
+		margin-left: 385px
 	&__title
 		+circe-regular
 		font-size: 29px
@@ -474,6 +482,9 @@ img
 	padding-bottom: 120px
 	&__list
 		margin-top: 50px
+		margin-left: auto
+		margin-right: auto
+		max-width: 1220px
 		+pie-clearfix
 		&-item
 			float: left
@@ -502,13 +513,16 @@ img
 /* About
 	----------------------------------- */
 .about
-	padding-top: 45px
-	padding-bottom: 45px
+	padding-top: 50px
+	padding-bottom: 50px
+	&__container
+		max-width: 1240px
 	&__socials
-		margin-top: 40px
+		margin-top: 38px
 		float: left
 	&__auth
 		float: right
+		margin-right: 40px
 		font-size: 0
 		&-img
 			display: inline-block
