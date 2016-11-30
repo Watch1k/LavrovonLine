@@ -1,12 +1,19 @@
-//block footToggle
-//	-var footToggle = ''
-//-var footMenu = ['Menu 1', 'Menu 2', 'Menu 3', 'Menu 4']
-//footer.footer
-//	.container
-//		span.footer__copy &copy; Template
-//		nav.footer__nav
-//			each value in footMenu
-//				if footToggle === value
-//					a.footer__nav-link.is-active(href='#')= value
-//				else
-//					a.footer__nav-link(href='#')= value
+footer.footer
+	.footer__top.header__top
+		.container
+			.footer__top-text.header__top-text Персональный сайт частного бухгалтера Артёма Лаврова
+			nav.footer__nav.nav.nav_footer
+				a.nav__link(href='#') МОИ УСЛУГИ
+				a.nav__link(href='#') ЦЕНЫ И ТАРИФЫ
+				a.nav__link(href='#') ПОЧЕМУ ЭТО ВЫГОДНО
+				a.nav__link(href='#') КОНТАКТЫ
+	.footer__bottom
+		.container
+			.footer__bottom-left
+				.footer__bottom-copy 2016 LAVROV.ONLINE
+				.footer__bottom-links
+					a.footer__bottom-links-item(href='#') Политика конфиденциальности
+					a.footer__bottom-links-item(href='#') Пользовательское соглашение
+			.footer__bottom-right
+				.footer__bottom-auth РАЗРАБОТКА:&nbsp;
+					span.footer__bottom-auth-color ALEXGONCHAROV.ONLINE

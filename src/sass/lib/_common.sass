@@ -52,6 +52,7 @@ body
 	margin: 0 auto
 	padding: 0 20px
 	max-width: 1380px
+	+pie-clearfix
 
 
 /* Helpers
@@ -200,26 +201,85 @@ img
 		+trs
 		&:hover
 			color: #0068cc
+	&_footer &__link
+		color: #ffffff
+	&_footer &__link:hover
+		color: #ffffff
+	&_footer &__link:last-child
+		margin-right: 0
 	
 .socials
+	font-size: 15px
 	+pie-clearfix
 	&__item
 		float: left
 		margin-left: 20px
-		font-size: 15px
 	&__fa
 		margin-right: 5px
 		color: #659fff
 		.fa-phone
 			position: relative
 			top: 2px
+	&_about &__item
+		margin-left: 30px
+		+circe-regular
+		font-size: 22px
+		color: #000000
+	&_about &__item:last-child
+		color: #1a1e38
+	&_about &__fa
+		margin-right: 10px
+		color: #0068cc
 
 
 /* ===================================
 	 Footer
 	 =================================== */
 .footer
-
+	&__nav
+		float: right
+	&__bottom
+		padding-top: 18px
+		padding-bottom: 15px
+		+pie-clearfix
+		&-left
+			float: left
+			font-size: 15px
+			color: #c7c7c7
+			+pie-clearfix
+		&-copy
+			float: left
+		&-links
+			float: left
+			margin-left: 20px
+			+pie-clearfix
+			&-item
+				position: relative
+				float: left
+				text-decoration: underline
+				+trs
+				&:hover
+					color: #004281
+					text-decoration: underline
+				& + &
+					margin-left: 30px
+					&:before
+						content: ''
+						position: absolute
+						z-index: 1
+						left: -15px
+						top: 3px
+						bottom: 5px
+						width: 1px
+						background-color: #c7c7c7
+		&-right
+			float: right
+		&-auth
+			+fixedsys
+			font-size: 12px
+			color: #111111
+			&-color
+				color: #004281
 
 /* ===================================
 	 Main
@@ -445,6 +505,7 @@ img
 	padding-top: 45px
 	padding-bottom: 45px
 	&__socials
+		margin-top: 40px
 		float: left
 	&__auth
 		float: right

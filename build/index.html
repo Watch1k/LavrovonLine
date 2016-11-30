@@ -17,7 +17,6 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <!-- begin logo-->
       <div class="header__top">
         <div class="container">
           <div class="header__top-text">Персональный сайт частного бухгалтера Артёма Лаврова</div>
@@ -31,7 +30,6 @@
           <nav class="header__bottom-nav nav"><a class="nav__link" href="#">МОИ УСЛУГИ</a><a class="nav__link" href="#">ЦЕНЫ И ТАРИФЫ</a><a class="nav__link" href="#">ПОЧЕМУ ЭТО ВЫГОДНО</a><a class="nav__link" href="#">КОНТАКТЫ</a></nav>
         </div>
       </div>
-      <!-- end logo-->
     </header>
     <main class="main">
       <!--begin screen-->
@@ -206,7 +204,7 @@
       <!--begin about-->
       <div class="about">
         <div class="container">
-          <div class="about__socials socials"><a class="socials__item" href="mailto:privet@lavrov.online"><i class="socials__fa fa fa-envelope-o"></i><span class="socials__text">privet@lavrov.online</span></a><a class="socials__item" href="tel:+79993796547"><i class="socials__fa fa fa-phone"></i><span class="socials__text">+7 999 379 6547</span></a>
+          <div class="about__socials socials socials_about"><a class="socials__item" href="mailto:privet@lavrov.online"><i class="socials__fa fa fa-envelope-o"></i><span class="socials__text">privet@lavrov.online</span></a><a class="socials__item" href="tel:+79993796547"><i class="socials__fa fa fa-phone"></i><span class="socials__text">+7 999 379 6547</span></a>
             <div class="socials__item"><i class="socials__fa fa fa-telegram"></i><span class="socials__text">Telegram: @lavrov_online</span></div>
           </div>
           <div class="about__auth">
@@ -218,17 +216,25 @@
       <!--end about-->
     </main>
   </div>
-  <!--block footToggle-->
-  <!--	-var footToggle = ''-->
-  <!--footer.footer-->
-  <!--	.container-->
-  <!--		span.footer__copy &copy; Template-->
-  <!--		nav.footer__nav-->
-  <!--			each value in footMenu-->
-  <!--				if footToggle === value-->
-  <!--					a.footer__nav-link.is-active(href='#')= value-->
-  <!--				else-->
-  <!--					a.footer__nav-link(href='#')= value-->
+  <footer class="footer">
+    <div class="footer__top header__top">
+      <div class="container">
+        <div class="footer__top-text header__top-text">Персональный сайт частного бухгалтера Артёма Лаврова</div>
+        <nav class="footer__nav nav nav_footer"><a class="nav__link" href="#">МОИ УСЛУГИ</a><a class="nav__link" href="#">ЦЕНЫ И ТАРИФЫ</a><a class="nav__link" href="#">ПОЧЕМУ ЭТО ВЫГОДНО</a><a class="nav__link" href="#">КОНТАКТЫ</a></nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-left">
+          <div class="footer__bottom-copy">2016 LAVROV.ONLINE</div>
+          <div class="footer__bottom-links"><a class="footer__bottom-links-item" href="#">Политика конфиденциальности</a><a class="footer__bottom-links-item" href="#">Пользовательское соглашение</a></div>
+        </div>
+        <div class="footer__bottom-right">
+          <div class="footer__bottom-auth">РАЗРАБОТКА:&nbsp;<span class="footer__bottom-auth-color">ALEXGONCHAROV.ONLINE</span></div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/app.js"></script>
 </body>
 
