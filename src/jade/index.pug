@@ -80,7 +80,7 @@ block content
 		.container
 			.why__title.title Почему это выгодно?
 				.title__color Несколько причин, по которым вам стоит попробовать
-			.why__list
+			.why__list.js-why-slider
 				.why__list-item
 					.why__list-icon.fa.fa-check
 					.why__list-title Облачные технологии
@@ -128,7 +128,7 @@ block content
 		.container
 			.steps__title.title Современная мобильная бухгалтерия в 3 шага
 				.title__color Весь процесс занимает не более часа для старта.
-			.steps__list
+			.steps__list.js-steps-slider
 				.steps__list-item
 					.steps__list-number 1
 					.steps__list-title Вы оставляете заявку
@@ -148,97 +148,213 @@ block content
 		.container
 			.rate__title.title.title_dark Выберите свой подходящий тариф
 				.title__color Выберите свой, или оставьте заявку на расчет
-			.rate__list
-				.rate__card
-					.card
-						.card__rate тариф
-						.card__title ПРОСТОЙ
-						.card__subtitle без работников*
-						p.card__text Сдача ежеквартальной и годовой отчетности в налоговые органы.
-						p.card__text Ведение бухгалтерского и <br>налогового учета в полном объеме
-						p.card__text Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений
-						p.card__text Консультации по налоговым вопросам
-						.card__row
-							.card__col
-								.card__number 6000
-								.card__number-desc руб/месяц
-							.card__col
-								.card__number 16200
-								.card__number-desc руб/квартал
-								.card__number-info ЭКОНОМИЯ
-									span.card__number-info-color 1800 РУБЛЕЙ
-							.card__col
-								.card__number 61200
-								.card__number-desc руб/год
-								.card__number-info ЭКОНОМИЯ
-									span.card__number-info-color 10800 РУБЛЕЙ
-						.text-center
-							a.card__btn.btn(href='#')
-								span.btn__text ОСТАВИТЬ ЗАЯВКУ
-								i.btn__fa.btn__fa_right.fa.fa-chevron-right
-					.rate__card-desc Тарифы для ОСНО <br>расчитываются индивидуально
-				.rate__card
-					.card
-						.card__rate тариф
-						.card__title ОПТИМАЛЬНЫЙ
-						.card__subtitle без работников*
-						p.card__text Сдача ежеквартальной и годовой отчетности в налоговые органы.
-						p.card__text Ведение бухгалтерского и <br>налогового учета в полном объеме
-						p.card__text Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений
-						p.card__text Консультации по налоговым вопросам
-						p.card__text Ведение управленческого учета с подробным анализом текущей деятельности
-						.card__row
-							.card__col
-								.card__number 9000
-								.card__number-desc руб/месяц
-							.card__col
-								.card__number 24300
-								.card__number-desc руб/квартал
-								.card__number-info ЭКОНОМИЯ
-									span.card__number-info-color 2700 РУБЛЕЙ
-							.card__col
-								.card__number 91800
-								.card__number-desc руб/год
-								.card__number-info ЭКОНОМИЯ
-									span.card__number-info-color 16200 РУБЛЕЙ
-						.text-center
-							a.card__btn.btn(href='#')
-								span.btn__text ОСТАВИТЬ ЗАЯВКУ
-								i.btn__fa.btn__fa_right.fa.fa-chevron-right
-					.rate__card-desc Тарифы для ОСНО <br>расчитываются индивидуально
-				.rate__card
-					.card
-						.card__rate тариф
-						.card__title БИЗНЕС
-						.card__subtitle возможность учета работников
-						p.card__text Сдача ежеквартальной и годовой отчетности в налоговые органы <br>в том числе по сотрудникам:&nbsp;
-							span.card__text-bold 6-НДФЛ, СЗВ-М, 4-ФСС, РСВ-1
-						p.card__text Ведение бухгалтерского и <br>налогового учета в полном объеме
-						p.card__text Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений
-						p.card__text Консультации по налоговым вопросам
-						p.card__text Ведение <span class="card__text-word">кадрового</span> и <span class="card__text-word">управленческого</span> учета с подробным анализом текущей деятельности
-						p.card__text Расчет заработной платы по методу работодателя
-						.card__row
-							.card__col
-								.card__number 6000
-								.card__number-desc руб/месяц
-							.card__col
-								.card__number 16200
-								.card__number-desc руб/квартал
-								.card__number-info ЭКОНОМИЯ
-									span.card__number-info-color 1800 РУБЛЕЙ
-							.card__col
-								.card__number 61200
-								.card__number-desc руб/год
-								.card__number-info ЭКОНОМИЯ
-									span.card__number-info-color 10800 РУБЛЕЙ
-						.card__info Стоимость учёта <br>каждого работника
-							span.card__info-bold 200 рублей
-						.text-center
-							a.card__btn.btn(href='#')
-								span.btn__text ОСТАВИТЬ ЗАЯВКУ
-								i.btn__fa.btn__fa_right.fa.fa-chevron-right
-					.rate__card-desc Тарифы для ОСНО <br>расчитываются индивидуально
+			.rate__nav.js-rate-nav
+				button.rate__nav-item.is-active(type='button') ДЛЯ ИП
+				button.rate__nav-item(type='button') ДЛЯ ООО
+			.rate__list.js-rate-for
+				.rate__list-el.js-rate-slider
+					.rate__card
+						.card
+							.text-center
+								.card__title
+									.card__title-name тариф
+									.card__title-subname ПРОСТОЙ
+									.card__title-tooltip Для тех, кто просто хочет, чтобы с налоговыми органами и фондами был порядок. Не имеет значения сколько операций совершается за период обслуживания)
+							.card__subtitle без работников*
+							p.card__text Сдача ежеквартальной и годовой отчетности в налоговые органы.
+							p.card__text Ведение книги учёта доходов/расходов согласно налоговому законодательству
+							p.card__text Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений
+							p.card__text Консультации по налоговым вопросам
+							p.card__text Сопровождение в постановке на учет
+							.card__row
+								.card__col
+									.card__number 2000
+									.card__number-desc руб/месяц
+								.card__col
+									.card__number 5400
+									.card__number-desc руб/квартал
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 1050 РУБЛЕЙ
+								.card__col
+									.card__number 20400
+									.card__number-desc руб/год
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 3600 РУБЛЕЙ
+							.text-center
+								a.card__btn.btn(href='#')
+									span.btn__text ОСТАВИТЬ ЗАЯВКУ
+									i.btn__fa.btn__fa_right.fa.fa-chevron-right
+						.rate__card-desc Тарифы для ОСНО <br>расчитываются индивидуально
+					.rate__card
+						.card
+							.text-center
+								.card__title
+									.card__title-name тариф
+									.card__title-subname ОПТИМАЛЬНЫЙ
+									.card__title-tooltip Для тех, кто хочет наглядно видеть текущие показатели своего бизнеса и получать подробную аналитическую отчетность для оперативных упарвленческих решений
+							.card__subtitle без работников*
+							p.card__text Сдача ежеквартальной и годовой отчетности в налоговые органы.
+							p.card__text Ведение книги учёта доходов/расходов согласно налоговому законодательству
+							p.card__text Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений
+							p.card__text Консультации по налоговым вопросам
+							p.card__text Ведение управленческого учета с подробным анализом текущей деятельности
+							p.card__text Сопровождение в постановке на учет
+							.card__row
+								.card__col
+									.card__number 3500
+									.card__number-desc руб/месяц
+								.card__col
+									.card__number 9450
+									.card__number-desc руб/квартал
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 1080 РУБЛЕЙ
+								.card__col
+									.card__number 35700
+									.card__number-desc руб/год
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 6300 РУБЛЕЙ
+							.text-center
+								a.card__btn.btn(href='#')
+									span.btn__text ОСТАВИТЬ ЗАЯВКУ
+									i.btn__fa.btn__fa_right.fa.fa-chevron-right
+						.rate__card-desc Тарифы для ОСНО <br>расчитываются индивидуально
+					.rate__card
+						.card
+							.text-center
+								.card__title
+									.card__title-name тариф
+									.card__title-subname БИЗНЕС
+									.card__title-tooltip <span class="card__title-tooltip-bold">Тариф для эффективных руководителей.</span> Вы получаете: анализ текущих показателей вашей деятельности, показатели рентабельности, состав доходов, расходов, заработной платы, а так же другую необходимую аналитическую информацию.
+							.card__subtitle возможность учета работников
+							p.card__text Сдача ежеквартальной и годовой отчетности в налоговые органы <br>в том числе по сотрудникам:&nbsp;
+								span.card__text-bold 6-НДФЛ, СЗВ-М, 4-ФСС, РСВ-1
+							p.card__text Ведение книги учёта доходов/расходов согласно налоговому законодательству
+							p.card__text Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений
+							p.card__text Консультации по налоговым вопросам
+							p.card__text Ведение <span class="card__text-word">кадрового</span> и <span class="card__text-word">управленческого</span> учета с подробным анализом текущей деятельности
+							p.card__text Расчет заработной платы по методу работодателя
+							p.card__text Сопровождение в постановке на учет
+							.card__row
+								.card__col
+									.card__number 4500
+									.card__number-desc руб/месяц
+								.card__col
+									.card__number 12150
+									.card__number-desc руб/квартал
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 1350 РУБЛЕЙ
+								.card__col
+									.card__number 45900
+									.card__number-desc руб/год
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 8100 РУБЛЕЙ
+							.card__info Стоимость учёта <br>каждого работника
+								span.card__info-bold 200 рублей
+							.text-center
+								a.card__btn.btn(href='#')
+									span.btn__text ОСТАВИТЬ ЗАЯВКУ
+									i.btn__fa.btn__fa_right.fa.fa-chevron-right
+						.rate__card-desc Тарифы для ОСНО <br>расчитываются индивидуально
+				.rate__list-el.js-rate-slider-2
+					.rate__card
+						.card
+							.text-center
+								.card__title
+									.card__title-name тариф
+									.card__title-subname ПРОСТОЙ
+									.card__title-tooltip Для тех, кто просто хочет, чтобы с налоговыми органами и фондами был порядок. Не имеет значения сколько операций совершается за период обслуживания)
+							.card__subtitle без работников*
+							p.card__text Сдача ежеквартальной и годовой отчетности в налоговые органы.
+							p.card__text Ведение бухгалтерского и <br>налогового учета в полном объеме
+							p.card__text Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений
+							p.card__text Консультации по налоговым вопросам
+							.card__row
+								.card__col
+									.card__number 6000
+									.card__number-desc руб/месяц
+								.card__col
+									.card__number 16200
+									.card__number-desc руб/квартал
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 1800 РУБЛЕЙ
+								.card__col
+									.card__number 61200
+									.card__number-desc руб/год
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 10800 РУБЛЕЙ
+							.text-center
+								a.card__btn.btn(href='#')
+									span.btn__text ОСТАВИТЬ ЗАЯВКУ
+									i.btn__fa.btn__fa_right.fa.fa-chevron-right
+						.rate__card-desc Тарифы для ОСНО <br>расчитываются индивидуально
+					.rate__card
+						.card
+							.text-center
+								.card__title
+									.card__title-name тариф
+									.card__title-subname ОПТИМАЛЬНЫЙ
+									.card__title-tooltip Для тех, кто хочет наглядно видеть текущие показатели своего бизнеса и получать подробную аналитическую отчетность для оперативных упарвленческих решений
+							.card__subtitle без работников*
+							p.card__text Сдача ежеквартальной и годовой отчетности в налоговые органы.
+							p.card__text Ведение бухгалтерского и <br>налогового учета в полном объеме
+							p.card__text Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений
+							p.card__text Консультации по налоговым вопросам
+							p.card__text Ведение управленческого учета с подробным анализом текущей деятельности
+							.card__row
+								.card__col
+									.card__number 9000
+									.card__number-desc руб/месяц
+								.card__col
+									.card__number 24300
+									.card__number-desc руб/квартал
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 2700 РУБЛЕЙ
+								.card__col
+									.card__number 91800
+									.card__number-desc руб/год
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 16200 РУБЛЕЙ
+							.text-center
+								a.card__btn.btn(href='#')
+									span.btn__text ОСТАВИТЬ ЗАЯВКУ
+									i.btn__fa.btn__fa_right.fa.fa-chevron-right
+						.rate__card-desc Тарифы для ОСНО <br>расчитываются индивидуально
+					.rate__card
+						.card
+							.text-center
+								.card__title
+									.card__title-name тариф
+									.card__title-subname БИЗНЕС
+									.card__title-tooltip <span class="card__title-tooltip-bold">Тариф для эффективных руководителей.</span> Вы получаете: анализ текущих показателей вашей деятельности, показатели рентабельности, состав доходов, расходов, заработной платы, а так же другую необходимую аналитическую информацию.
+							.card__subtitle возможность учета работников
+							p.card__text Сдача ежеквартальной и годовой отчетности в налоговые органы <br>в том числе по сотрудникам:&nbsp;
+								span.card__text-bold 6-НДФЛ, СЗВ-М, 4-ФСС, РСВ-1
+							p.card__text Ведение бухгалтерского и <br>налогового учета в полном объеме
+							p.card__text Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений
+							p.card__text Консультации по налоговым вопросам
+							p.card__text Ведение <span class="card__text-word">кадрового</span> и <span class="card__text-word">управленческого</span> учета с подробным анализом текущей деятельности
+							p.card__text Расчет заработной платы по методу работодателя
+							.card__row
+								.card__col
+									.card__number 10000
+									.card__number-desc руб/месяц
+								.card__col
+									.card__number 27300
+									.card__number-desc руб/квартал
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 3000 РУБЛЕЙ
+								.card__col
+									.card__number 102000
+									.card__number-desc руб/год
+									.card__number-info ЭКОНОМИЯ
+										span.card__number-info-color 18000 РУБЛЕЙ
+							.card__info Стоимость учёта <br>каждого работника
+								span.card__info-bold 200 рублей
+							.text-center
+								a.card__btn.btn(href='#')
+									span.btn__text ОСТАВИТЬ ЗАЯВКУ
+									i.btn__fa.btn__fa_right.fa.fa-chevron-right
+						.rate__card-desc Тарифы для ОСНО <br>расчитываются индивидуально
 	//end rate
 
 	//begin feed

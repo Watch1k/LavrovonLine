@@ -121,6 +121,9 @@ img
 	text-transform: uppercase
 	letter-spacing: 0.04em
 	+trs
+	+r(767)
+		padding: 10px 10px 7px
+		font-size: 13px
 	&:hover
 		background-color: darken(#004281,10)
 		border-color: darken(#004281,10)
@@ -144,6 +147,9 @@ img
 		top: -1px
 		&.fa
 			font-size: 13px
+			+r(767)
+				top: 0
+				font-size: 12px
 		&_right
 			margin-right: -4px
 			margin-left: 10px
@@ -153,12 +159,18 @@ img
 	font-size: 34px
 	color: #004281
 	text-align: center
+	+r(767)
+		font-size: 24px
 	&__color
 		display: block
 		margin-top: -3px
 		+circe-light
 		font-size: 22px
 		line-height: 1.5
+		+r(767)
+			margin-top: 5px
+			font-size: 18px
+			line-height: 1.25
 	&_dark
 		color: #272727
 
@@ -310,6 +322,9 @@ img
 	position: relative
 	padding-top: 140px
 	padding-bottom: 140px
+	+r(767)
+		padding-top: 60px
+		padding-bottom: 60px
 	&__bg
 		position: absolute
 		z-index: 1
@@ -319,51 +334,94 @@ img
 		height: 100%
 		background: url(../img/bg/screen.jpg) center top no-repeat
 		background-size: cover
+		+r(767)
+			background-position: left center
 	&__container
 		position: relative
 		z-index: 2
 	.screen__inner
 		margin-left: 120px
+		+r(1023)
+			margin-left: 20px
+		+r(767)
+			margin-left: 0
 	&__title
 		font-size: 34px
 		color: #004281
+		+r(767)
+			font-size: 24px
 		&-color
 			display: block
 			margin-top: -5px
 			+circe-bold
 			font-size: 46px
 			letter-spacing: -0.04em
+			+r(767)
+				font-size: 26px
 	&__list
 		margin-top: 20px
 		margin-bottom: 40px
 		font-size: 21px
 		line-height: 1.52
+		+r(767)
+			font-size: 16px
+		&-item
+			+pie-clearfix
+			& + &
+				+r(767)
+					margin-top: 7px
+		&-text
+			+r(767)
+				display: block
+				overflow: hidden
+				line-height: 1.1
 		&-fa
 			margin-right: 12px
 			color: #b22257
+			+r(767)
+				position: relative
+				float: left
+				top: 2px
+				margin-right: 7px
 			&.fa
 				font-size: 13px
 	&__row
 		+pie-clearfix
 	&__btn
 		border-radius: 3px
+		+r(767)
+			display: table
+			margin-left: auto
+			margin-right: auto
 		& + &
 			margin-left: 20px
+			+r(767)
+				margin-top: 20px
+				margin-left: auto
 			
 /* Eco
 	----------------------------------- */
 .eco
 	padding-top: 75px
 	padding-bottom: 90px
+	+r(767)
+		padding-top: 40px
+		padding-bottom: 60px
 	&__title
 		+circe-bold
 		font-size: 34px
 		color: #004281
 		text-align: center
+		+r(767)
+			font-size: 22px
+			line-height: 1
 		&-color
 			display: block
 			margin-top: -7px
 			+circe-light
+			+r(767)
+				margin-top: 0
+				font-size: 20px
 	&__list
 		max-width: 900px
 		margin-top: 5px
@@ -378,12 +436,25 @@ img
 			text-align: center
 			font-size: 19px
 			line-height: 1.25
+			+r(767)
+				width: 50%
+				font-size: 17px
+			+r(539)
+				margin-top: 20px
+				width: 100%
+				font-size: 16px
+				br
+					display: none
 			&:nth-child(3n - 1)
 				position: relative
 				left: 5px
+				+r(767)
+					left: auto
 			&:nth-child(3n)
 				position: relative
 				left: -15px
+				+r(767)
+					left: auto
 		&-icon
 			height: 75px
 			+vertical
@@ -392,16 +463,28 @@ img
 			margin-right: auto
 		&-item:nth-child(1) &-text
 			max-width: 275px
+			+r(539)
+				max-width: 260px
 		&-item:nth-child(2) &-text
 			max-width: 195px
+			+r(539)
+				max-width: 260px
 		&-item:nth-child(3) &-text
 			max-width: 170px
+			+r(539)
+				max-width: 260px
 		&-item:nth-child(4) &-text
 			max-width: 210px
+			+r(539)
+				max-width: 260px
 		&-item:nth-child(5) &-text
 			max-width: 150px
+			+r(539)
+				max-width: 260px
 		&-item:nth-child(6) &-text
 			max-width: 145px
+			+r(539)
+				max-width: 260px
 	
 /* Feed
 	----------------------------------- */
@@ -417,8 +500,16 @@ img
 		z-index: 1
 		left: 100px
 		bottom: -55px
+		+r(1023)
+			top: -50px
+			left: 50px
+			&-img
+				width: auto
+				height: 100%
 	&__content
 		margin-left: 385px
+		+r(1023)
+			margin-left: 200px
 	&__title
 		+circe-regular
 		font-size: 29px
@@ -426,6 +517,12 @@ img
 		text-transform: uppercase
 		text-align: center
 		color: #ffffff
+		+r(1439)
+			font-size: 25px
+		+r(1023)
+			font-size: 23px
+		+r(767)
+			font-size: 15px
 		&_left
 			text-align: left
 		&-color
@@ -439,6 +536,8 @@ img
 			content: ''
 			position: absolute
 			top: 15px
+			+r(767)
+				top: 5px
 		&:before
 			+s(arrow-right)
 			right: 100%
@@ -457,11 +556,18 @@ img
 	padding-bottom: 95px
 	background: url(../img/bg/why.jpg) center center no-repeat
 	background-size: cover
+	+r(767)
+		padding-top: 40px
+		padding-bottom: 60px
 	&__list
 		margin-left: auto
 		margin-right: auto
 		max-width: 980px
 		font-size: 0
+		+r(767)
+			text-align: center
+			margin-left: -20px
+			margin-right: -20px
 		&-item
 			margin-top: 40px
 			display: inline-block
@@ -470,31 +576,89 @@ img
 			width: 33.33%
 			font-size: 19px
 			text-align: center
+			+r(1023)
+				margin-top: 30px
+				padding-left: 10px
+				padding-right: 10px
+			+r(767)
+				width: 50%
+				margin-top: 20px
+				padding-left: 20px
+				padding-right: 20px
+			br
+				+r(1023)
+					display: none
 		&-icon
 			color: #b22257
 			&.fa
 				font-size: 38px
+				+r(1023)
+					font-size: 30px
 		&-title
 			margin-top: 15px
 			+circe-bold
 			font-size: 24px
+			+r(1023)
+				margin-top: 10px
+				font-size: 20px
 		&-text
 			margin-top: 10px
 			line-height: 1.25
+			+r(1023)
+				margin-top: 5px
+				font-size: 16px
+			+r(767)
+				max-width: 420px
+				margin-left: auto
+				margin-right: auto
 	&__btn
 		margin-top: 75px
+	.slick-prev
+		position: absolute
+		left: 50%
+		bottom: 0
+		margin-bottom: -40px
+		margin-left: -35px
+		width: 30px
+		height: 30px
+		+trs
+		&:active
+			transform: scale(1.15)
+		.fa
+			font-size: 20px
+			color: #224380
+	.slick-next
+		position: absolute
+		right: 50%
+		bottom: 0
+		margin-bottom: -40px
+		margin-right: -35px
+		width: 30px
+		height: 30px
+		+trs
+		&:active
+			transform: scale(1.15)
+		.fa
+			font-size: 20px
+			color: #224380
 		
 /* Steps
 	----------------------------------- */
 .steps
 	padding-top: 70px
 	padding-bottom: 120px
+	+r(767)
+		padding-top: 40px
+		padding-bottom: 80px
 	&__list
 		margin-top: 50px
 		margin-left: auto
 		margin-right: auto
 		max-width: 1220px
 		+pie-clearfix
+		+r(767)
+			margin-left: -20px
+			margin-right: -20px
 		&-item
 			float: left
 			width: 33.33%
@@ -507,17 +671,51 @@ img
 			margin-top: 5px
 			+circe-bold
 			font-size: 24px
+			+r(1023)
+				font-size: 22px
 		&-text
 			margin-top: 12px
 			margin-left: auto
 			margin-right: auto
 			line-height: 1.25
+			+r(1023)
+				font-size: 17px
+			+r(767)
+				max-width: 420px
 		&-item:nth-child(1) &-text
 			max-width: 265px
 		&-item:nth-child(2) &-text
 			max-width: 370px
 		&-item:nth-child(3) &-text
 			max-width: 335px
+	.slick-prev
+		position: absolute
+		left: 50%
+		bottom: 0
+		margin-bottom: -40px
+		margin-left: -35px
+		width: 30px
+		height: 30px
+		+trs
+		&:active
+			transform: scale(1.15)
+		.fa
+			font-size: 20px
+			color: #224380
+	.slick-next
+		position: absolute
+		right: 50%
+		bottom: 0
+		margin-bottom: -40px
+		margin-right: -35px
+		width: 30px
+		height: 30px
+		+trs
+		&:active
+			transform: scale(1.15)
+		.fa
+			font-size: 20px
+			color: #224380
 			
 /* Rate
 	----------------------------------- */
@@ -525,13 +723,39 @@ img
 	padding-top: 70px
 	padding-bottom: 75px
 	background-color: #fafbfb
+	+r(767)
+		padding-top: 40px
+		padding-bottom: 60px
+	&__nav
+		margin-top: 30px
+		font-size: 0
+		text-align: center
+		&-item
+			display: inline-block
+			margin: 0 5px
+			padding: 5px 10px 1px
+			+circe-bold
+			font-size: 21px
+			color: #313131
+			border: 3px solid transparent
+			+trs
+			&:hover
+				border-color: #313131
+			&.is-active
+				border-color: #0068cc
 	&__list
+		margin-top: 70px
+		margin-left: auto
+		margin-right: auto
+		max-width: 1220px
 		+pie-clearfix
+		+r(1199)
+			margin-left: -20px
+			margin-right: -20px
+			height: auto !important
 	&__card
-		margin-left: 20px
-		margin-right: 20px
-		width: 370px
 		float: left
+		width: 33.33%
 		&-desc
 			margin-top: 25px
 			+circe-regular
@@ -539,20 +763,105 @@ img
 			line-height: 1.25
 			color: #8f8f8f
 			text-align: center
+	.slick-prev
+		position: absolute
+		left: 50%
+		top: 0
+		margin-top: -40px
+		margin-left: -35px
+		width: 30px
+		height: 30px
+		+trs
+		&:active
+			transform: scale(1.15)
+		.fa
+			font-size: 20px
+			color: #224380
+	.slick-next
+		position: absolute
+		right: 50%
+		top: 0
+		margin-top: -40px
+		margin-right: -35px
+		width: 30px
+		height: 30px
+		+trs
+		&:active
+			transform: scale(1.15)
+		.fa
+			font-size: 20px
+			color: #224380
 	
 .card
 	padding: 40px 40px 60px
+	margin-left: auto
+	margin-right: auto
+	width: 370px
 	text-align: center
 	font-size: 16px
 	line-height: 1.25
 	border: 3px solid #0068cc
-	&__rate
-		font-size: 15px
-		color: #0068cc
+	+r(767)
+		padding: 25px 15px 35px
+	+r(380)
+		width: auto
+		max-width: 370px
+		margin-left: 5px
+		margin-right: 5px
 	&__title
-		+circe-bold
-		color: #0068cc
-		font-size: 20px
+		position: relative
+		display: inline-block
+		cursor: pointer
+		padding-left: 20px
+		padding-right: 20px
+		&-name
+			font-size: 15px
+			color: #0068cc
+		&-subname
+			+circe-bold
+			color: #0068cc
+			font-size: 20px
+		&-tooltip
+			position: absolute
+			opacity: 0
+			transform: translateY(-10%)
+			pointer-events: none
+			z-index: 1
+			bottom: 100%
+			left: 50%
+			margin-left: -35px
+			margin-bottom: 20px
+			width: 255px
+			padding: 17px 35px 17px 20px
+			color: #4e4e4e
+			font-size: 13px
+			line-height: 1.25
+			text-align: left
+			background-color: white
+			border-radius: 4px
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.14)
+			+trs
+			+r(1023)
+				display: none
+			&-bold
+				+circe-bold
+			&:before
+				content: ''
+				position: absolute
+				z-index: 2
+				top: 100%
+				left: 30px
+				+arr(38,17,#fff,b)
+			&:after
+				content: ''
+				position: absolute
+				z-index: 1
+				top: 100%
+				left: 28px
+				+arr(42,19,rgba(0, 0, 0, 0.035),b)
+		&:hover &-tooltip
+			opacity: 1
+			transform: translateY(0)
 	&__subtitle
 		margin-top: 22px
 		+circe-bold
@@ -560,13 +869,19 @@ img
 	&__text
 		margin-top: 38px
 		color: #313131
+		+r(767)
+			margin-top: 20px
 		&-word
 			+circe-regular
 		&-bold
 			display: block
 			+circe-bold
+		br
+			display: none
 		& + &
 			margin-top: 17px
+			+r(767)
+				margin-top: 12px
 	&__info
 		margin-top: 30px
 		margin-bottom: -10px
@@ -581,6 +896,8 @@ img
 		margin-right: -20px
 		margin-top: 50px
 		table-layout: fixed
+		+r(767)
+			margin-top: 30px
 	&__col
 		display: table-cell
 		width: 33.33%
@@ -588,6 +905,8 @@ img
 		+circe-bold
 		font-size: 33px
 		color: #0068cc
+		+r(767)
+			font-size: 25px
 		&-desc
 			margin-top: -4px
 			+circe-regular

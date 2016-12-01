@@ -111,7 +111,7 @@
           <div class="why__title title">Почему это выгодно?
             <div class="title__color">Несколько причин, по которым вам стоит попробовать</div>
           </div>
-          <div class="why__list">
+          <div class="why__list js-why-slider">
             <div class="why__list-item">
               <div class="why__list-icon fa fa-check"></div>
               <div class="why__list-title">Облачные технологии</div>
@@ -170,7 +170,7 @@
           <div class="steps__title title">Современная мобильная бухгалтерия в 3 шага
             <div class="title__color">Весь процесс занимает не более часа для старта.</div>
           </div>
-          <div class="steps__list">
+          <div class="steps__list js-steps-slider">
             <div class="steps__list-item">
               <div class="steps__list-number">1</div>
               <div class="steps__list-title">Вы оставляете заявку</div>
@@ -196,97 +196,231 @@
           <div class="rate__title title title_dark">Выберите свой подходящий тариф
             <div class="title__color">Выберите свой, или оставьте заявку на расчет</div>
           </div>
-          <div class="rate__list">
-            <div class="rate__card">
-              <div class="card">
-                <div class="card__rate">тариф</div>
-                <div class="card__title">ПРОСТОЙ</div>
-                <div class="card__subtitle">без работников*</div>
-                <p class="card__text">Сдача ежеквартальной и годовой отчетности в налоговые органы.</p>
-                <p class="card__text">Ведение бухгалтерского и <br>налогового учета в полном объеме</p>
-                <p class="card__text">Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений</p>
-                <p class="card__text">Консультации по налоговым вопросам</p>
-                <div class="card__row">
-                  <div class="card__col">
-                    <div class="card__number">6000</div>
-                    <div class="card__number-desc">руб/месяц</div>
+          <div class="rate__nav js-rate-nav">
+            <button class="rate__nav-item is-active" type="button">ДЛЯ ИП</button>
+            <button class="rate__nav-item" type="button">ДЛЯ ООО</button>
+          </div>
+          <div class="rate__list js-rate-for">
+            <div class="rate__list-el js-rate-slider">
+              <div class="rate__card">
+                <div class="card">
+                  <div class="text-center">
+                    <div class="card__title">
+                      <div class="card__title-name">тариф</div>
+                      <div class="card__title-subname">ПРОСТОЙ</div>
+                      <div class="card__title-tooltip">Для тех, кто просто хочет, чтобы с налоговыми органами и фондами был порядок. Не имеет значения сколько операций совершается за период обслуживания)</div>
+                    </div>
                   </div>
-                  <div class="card__col">
-                    <div class="card__number">16200</div>
-                    <div class="card__number-desc">руб/квартал</div>
-                    <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">1800 РУБЛЕЙ</span></div>
+                  <div class="card__subtitle">без работников*</div>
+                  <p class="card__text">Сдача ежеквартальной и годовой отчетности в налоговые органы.</p>
+                  <p class="card__text">Ведение книги учёта доходов/расходов согласно налоговому законодательству</p>
+                  <p class="card__text">Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений</p>
+                  <p class="card__text">Консультации по налоговым вопросам</p>
+                  <p class="card__text">Сопровождение в постановке на учет</p>
+                  <div class="card__row">
+                    <div class="card__col">
+                      <div class="card__number">2000</div>
+                      <div class="card__number-desc">руб/месяц</div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">5400</div>
+                      <div class="card__number-desc">руб/квартал</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">1050 РУБЛЕЙ</span></div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">20400</div>
+                      <div class="card__number-desc">руб/год</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">3600 РУБЛЕЙ</span></div>
+                    </div>
                   </div>
-                  <div class="card__col">
-                    <div class="card__number">61200</div>
-                    <div class="card__number-desc">руб/год</div>
-                    <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">10800 РУБЛЕЙ</span></div>
-                  </div>
+                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
                 </div>
-                <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
               </div>
-              <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
+              <div class="rate__card">
+                <div class="card">
+                  <div class="text-center">
+                    <div class="card__title">
+                      <div class="card__title-name">тариф</div>
+                      <div class="card__title-subname">ОПТИМАЛЬНЫЙ</div>
+                      <div class="card__title-tooltip">Для тех, кто хочет наглядно видеть текущие показатели своего бизнеса и получать подробную аналитическую отчетность для оперативных упарвленческих решений</div>
+                    </div>
+                  </div>
+                  <div class="card__subtitle">без работников*</div>
+                  <p class="card__text">Сдача ежеквартальной и годовой отчетности в налоговые органы.</p>
+                  <p class="card__text">Ведение книги учёта доходов/расходов согласно налоговому законодательству</p>
+                  <p class="card__text">Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений</p>
+                  <p class="card__text">Консультации по налоговым вопросам</p>
+                  <p class="card__text">Ведение управленческого учета с подробным анализом текущей деятельности</p>
+                  <p class="card__text">Сопровождение в постановке на учет</p>
+                  <div class="card__row">
+                    <div class="card__col">
+                      <div class="card__number">3500</div>
+                      <div class="card__number-desc">руб/месяц</div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">9450</div>
+                      <div class="card__number-desc">руб/квартал</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">1080 РУБЛЕЙ</span></div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">35700</div>
+                      <div class="card__number-desc">руб/год</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">6300 РУБЛЕЙ</span></div>
+                    </div>
+                  </div>
+                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                </div>
+                <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
+              </div>
+              <div class="rate__card">
+                <div class="card">
+                  <div class="text-center">
+                    <div class="card__title">
+                      <div class="card__title-name">тариф</div>
+                      <div class="card__title-subname">БИЗНЕС</div>
+                      <div class="card__title-tooltip"><span class="card__title-tooltip-bold">Тариф для эффективных руководителей.</span> Вы получаете: анализ текущих показателей вашей деятельности, показатели рентабельности, состав доходов, расходов, заработной платы, а так же другую
+                        необходимую аналитическую информацию.</div>
+                    </div>
+                  </div>
+                  <div class="card__subtitle">возможность учета работников</div>
+                  <p class="card__text">Сдача ежеквартальной и годовой отчетности в налоговые органы <br>в том числе по сотрудникам:&nbsp;<span class="card__text-bold">6-НДФЛ, СЗВ-М, 4-ФСС, РСВ-1</span></p>
+                  <p class="card__text">Ведение книги учёта доходов/расходов согласно налоговому законодательству</p>
+                  <p class="card__text">Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений</p>
+                  <p class="card__text">Консультации по налоговым вопросам</p>
+                  <p class="card__text">Ведение <span class="card__text-word">кадрового</span> и <span class="card__text-word">управленческого</span> учета с подробным анализом текущей деятельности</p>
+                  <p class="card__text">Расчет заработной платы по методу работодателя</p>
+                  <p class="card__text">Сопровождение в постановке на учет</p>
+                  <div class="card__row">
+                    <div class="card__col">
+                      <div class="card__number">4500</div>
+                      <div class="card__number-desc">руб/месяц</div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">12150</div>
+                      <div class="card__number-desc">руб/квартал</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">1350 РУБЛЕЙ</span></div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">45900</div>
+                      <div class="card__number-desc">руб/год</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">8100 РУБЛЕЙ</span></div>
+                    </div>
+                  </div>
+                  <div class="card__info">Стоимость учёта <br>каждого работника<span class="card__info-bold">200 рублей</span></div>
+                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                </div>
+                <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
+              </div>
             </div>
-            <div class="rate__card">
-              <div class="card">
-                <div class="card__rate">тариф</div>
-                <div class="card__title">ОПТИМАЛЬНЫЙ</div>
-                <div class="card__subtitle">без работников*</div>
-                <p class="card__text">Сдача ежеквартальной и годовой отчетности в налоговые органы.</p>
-                <p class="card__text">Ведение бухгалтерского и <br>налогового учета в полном объеме</p>
-                <p class="card__text">Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений</p>
-                <p class="card__text">Консультации по налоговым вопросам</p>
-                <p class="card__text">Ведение управленческого учета с подробным анализом текущей деятельности</p>
-                <div class="card__row">
-                  <div class="card__col">
-                    <div class="card__number">9000</div>
-                    <div class="card__number-desc">руб/месяц</div>
+            <div class="rate__list-el js-rate-slider-2">
+              <div class="rate__card">
+                <div class="card">
+                  <div class="text-center">
+                    <div class="card__title">
+                      <div class="card__title-name">тариф</div>
+                      <div class="card__title-subname">ПРОСТОЙ</div>
+                      <div class="card__title-tooltip">Для тех, кто просто хочет, чтобы с налоговыми органами и фондами был порядок. Не имеет значения сколько операций совершается за период обслуживания)</div>
+                    </div>
                   </div>
-                  <div class="card__col">
-                    <div class="card__number">24300</div>
-                    <div class="card__number-desc">руб/квартал</div>
-                    <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">2700 РУБЛЕЙ</span></div>
+                  <div class="card__subtitle">без работников*</div>
+                  <p class="card__text">Сдача ежеквартальной и годовой отчетности в налоговые органы.</p>
+                  <p class="card__text">Ведение бухгалтерского и <br>налогового учета в полном объеме</p>
+                  <p class="card__text">Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений</p>
+                  <p class="card__text">Консультации по налоговым вопросам</p>
+                  <div class="card__row">
+                    <div class="card__col">
+                      <div class="card__number">6000</div>
+                      <div class="card__number-desc">руб/месяц</div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">16200</div>
+                      <div class="card__number-desc">руб/квартал</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">1800 РУБЛЕЙ</span></div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">61200</div>
+                      <div class="card__number-desc">руб/год</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">10800 РУБЛЕЙ</span></div>
+                    </div>
                   </div>
-                  <div class="card__col">
-                    <div class="card__number">91800</div>
-                    <div class="card__number-desc">руб/год</div>
-                    <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">16200 РУБЛЕЙ</span></div>
-                  </div>
+                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
                 </div>
-                <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
               </div>
-              <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
-            </div>
-            <div class="rate__card">
-              <div class="card">
-                <div class="card__rate">тариф</div>
-                <div class="card__title">БИЗНЕС</div>
-                <div class="card__subtitle">возможность учета работников</div>
-                <p class="card__text">Сдача ежеквартальной и годовой отчетности в налоговые органы <br>в том числе по сотрудникам:&nbsp;<span class="card__text-bold">6-НДФЛ, СЗВ-М, 4-ФСС, РСВ-1</span></p>
-                <p class="card__text">Ведение бухгалтерского и <br>налогового учета в полном объеме</p>
-                <p class="card__text">Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений</p>
-                <p class="card__text">Консультации по налоговым вопросам</p>
-                <p class="card__text">Ведение <span class="card__text-word">кадрового</span> и <span class="card__text-word">управленческого</span> учета с подробным анализом текущей деятельности</p>
-                <p class="card__text">Расчет заработной платы по методу работодателя</p>
-                <div class="card__row">
-                  <div class="card__col">
-                    <div class="card__number">6000</div>
-                    <div class="card__number-desc">руб/месяц</div>
+              <div class="rate__card">
+                <div class="card">
+                  <div class="text-center">
+                    <div class="card__title">
+                      <div class="card__title-name">тариф</div>
+                      <div class="card__title-subname">ОПТИМАЛЬНЫЙ</div>
+                      <div class="card__title-tooltip">Для тех, кто хочет наглядно видеть текущие показатели своего бизнеса и получать подробную аналитическую отчетность для оперативных упарвленческих решений</div>
+                    </div>
                   </div>
-                  <div class="card__col">
-                    <div class="card__number">16200</div>
-                    <div class="card__number-desc">руб/квартал</div>
-                    <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">1800 РУБЛЕЙ</span></div>
+                  <div class="card__subtitle">без работников*</div>
+                  <p class="card__text">Сдача ежеквартальной и годовой отчетности в налоговые органы.</p>
+                  <p class="card__text">Ведение бухгалтерского и <br>налогового учета в полном объеме</p>
+                  <p class="card__text">Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений</p>
+                  <p class="card__text">Консультации по налоговым вопросам</p>
+                  <p class="card__text">Ведение управленческого учета с подробным анализом текущей деятельности</p>
+                  <div class="card__row">
+                    <div class="card__col">
+                      <div class="card__number">9000</div>
+                      <div class="card__number-desc">руб/месяц</div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">24300</div>
+                      <div class="card__number-desc">руб/квартал</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">2700 РУБЛЕЙ</span></div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">91800</div>
+                      <div class="card__number-desc">руб/год</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">16200 РУБЛЕЙ</span></div>
+                    </div>
                   </div>
-                  <div class="card__col">
-                    <div class="card__number">61200</div>
-                    <div class="card__number-desc">руб/год</div>
-                    <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">10800 РУБЛЕЙ</span></div>
-                  </div>
+                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
                 </div>
-                <div class="card__info">Стоимость учёта <br>каждого работника<span class="card__info-bold">200 рублей</span></div>
-                <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
               </div>
-              <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
+              <div class="rate__card">
+                <div class="card">
+                  <div class="text-center">
+                    <div class="card__title">
+                      <div class="card__title-name">тариф</div>
+                      <div class="card__title-subname">БИЗНЕС</div>
+                      <div class="card__title-tooltip"><span class="card__title-tooltip-bold">Тариф для эффективных руководителей.</span> Вы получаете: анализ текущих показателей вашей деятельности, показатели рентабельности, состав доходов, расходов, заработной платы, а так же другую
+                        необходимую аналитическую информацию.</div>
+                    </div>
+                  </div>
+                  <div class="card__subtitle">возможность учета работников</div>
+                  <p class="card__text">Сдача ежеквартальной и годовой отчетности в налоговые органы <br>в том числе по сотрудникам:&nbsp;<span class="card__text-bold">6-НДФЛ, СЗВ-М, 4-ФСС, РСВ-1</span></p>
+                  <p class="card__text">Ведение бухгалтерского и <br>налогового учета в полном объеме</p>
+                  <p class="card__text">Бухгалтерское и документальное <br>сопровождение <br>финансово-хозяйственных отношений</p>
+                  <p class="card__text">Консультации по налоговым вопросам</p>
+                  <p class="card__text">Ведение <span class="card__text-word">кадрового</span> и <span class="card__text-word">управленческого</span> учета с подробным анализом текущей деятельности</p>
+                  <p class="card__text">Расчет заработной платы по методу работодателя</p>
+                  <div class="card__row">
+                    <div class="card__col">
+                      <div class="card__number">10000</div>
+                      <div class="card__number-desc">руб/месяц</div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">27300</div>
+                      <div class="card__number-desc">руб/квартал</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">3000 РУБЛЕЙ</span></div>
+                    </div>
+                    <div class="card__col">
+                      <div class="card__number">102000</div>
+                      <div class="card__number-desc">руб/год</div>
+                      <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">18000 РУБЛЕЙ</span></div>
+                    </div>
+                  </div>
+                  <div class="card__info">Стоимость учёта <br>каждого работника<span class="card__info-bold">200 рублей</span></div>
+                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                </div>
+                <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
+              </div>
             </div>
           </div>
         </div>
