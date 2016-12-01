@@ -87,8 +87,12 @@ $(document).ready(function () {
 				rateForItem.next().hide();
 
 				rateNavBtn.on('click', function () {
-					rateSlider[0].slick.refresh();
-					rateSlider2[0].slick.refresh();
+					if (rateSlider.hasClass('slick-initialized')) {
+						rateSlider[0].slick.refresh();
+					}
+					if (rateSlider2.hasClass('slick-initialized')) {
+						rateSlider2[0].slick.refresh();
+					}
 					var index = $(this).index();
 					rateNavBtn.removeClass('is-active');
 					$(this).addClass('is-active');
@@ -128,6 +132,13 @@ $(document).ready(function () {
 				nav.removeClass('is-active');
 				hamburger.removeClass('is-active');
 			}
+		});
+
+		$('.nav a[href^="#"]').click(function(){
+			var el = $(this).attr('href');
+			$('body').animate({
+				scrollTop: $(el).offset().top - 60}, 1000);
+			return false;
 		});
 	})();
 

@@ -10,8 +10,10 @@
   <meta name="theme-color" content="#fff">
   <!-- <meta name="viewport" content="width=1200"> -->
   <!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+  <link rel="icon" type="image/png" href="favicon.ico">
   <link rel="stylesheet" media="all" href="css/screen.css">
   <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+  <script type="text/javascript" src="//cdn.callbackhunter.com/cbh.js?hunter_code=175b389c3d87efd80a4a181e33c9b491" charset="UTF-8"></script>
 </head>
 
 <body>
@@ -20,7 +22,8 @@
       <div class="header__top">
         <div class="container">
           <div class="header__socials socials socials_header"><a class="socials__item" href="mailto:privet@lavrov.online"><i class="socials__fa fa fa-envelope-o"></i><span class="socials__text">privet@lavrov.online</span></a><a class="socials__item" href="tel:+79993796547"><i class="socials__fa fa fa-phone"></i><span class="socials__text">+7 999 379 6547</span></a>
-            <div class="socials__item"><i class="socials__fa fa fa-telegram"></i><span class="socials__text">Telegram: @lavrov_online</span></div>
+            <a
+              class="socials__item" href="https://telegram.me/lavrov_online" target="_blank"><i class="socials__fa fa fa-telegram"></i><span class="socials__text">Telegram: @lavrov_online</span></a>
           </div>
           <h1 class="header__top-text">Персональный сайт частного бухгалтера Артёма Лаврова</h1>
         </div>
@@ -32,7 +35,7 @@
               <div class="hamburger__inner"></div>
             </div>
           </div>
-          <nav class="header__bottom-nav nav js-nav"><a class="nav__link" href="#">МОИ УСЛУГИ</a><a class="nav__link" href="#">ЦЕНЫ И ТАРИФЫ</a><a class="nav__link" href="#">ПОЧЕМУ ЭТО ВЫГОДНО</a><a class="nav__link" href="#">КОНТАКТЫ</a></nav>
+          <nav class="header__bottom-nav nav js-nav"><a class="nav__link" href="#eco">МОИ УСЛУГИ</a><a class="nav__link" href="#rate">ЦЕНЫ И ТАРИФЫ</a><a class="nav__link" href="#why">ПОЧЕМУ ЭТО ВЫГОДНО</a><a class="nav__link" href="#about">КОНТАКТЫ</a></nav>
         </div>
       </div>
     </header>
@@ -52,13 +55,13 @@
               <li class="screen__list-item"><i class="screen__list-fa fa fa-check"></i><span class="screen__list-text">не нужно держать штатного бухгалтера</span></li>
               <li class="screen__list-item"><i class="screen__list-fa fa fa-check"></i><span class="screen__list-text">идеально для ИП и ООО на УСН, ЕНВД, ПСН, ОСНО</span></li>
             </ul>
-            <div class="screen__row"><a class="screen__btn btn" href="#"><i class="btn__fa fa fa-phone"></i><span class="btn__text">ПЕРЕЗВОНЮ ЗА 28 СЕКУНД</span></a><a class="screen__btn btn btn_light" href="#">ОСТАВИТЬ ЗАЯВКУ</a></div>
+            <div class="screen__row"><a class="screen__btn btn" href="http://watch1k.in.ua/#callbackhunter"><i class="btn__fa fa fa-phone"></i><span class="btn__text">ПЕРЕЗВОНЮ ЗА 28 СЕКУНД</span></a><a class="screen__btn btn btn_light" href="http://watch1k.in.ua/#callbackhunter">ОСТАВИТЬ ЗАЯВКУ</a></div>
           </div>
         </div>
       </div>
       <!--end screen-->
       <!--begin eco-->
-      <div class="eco">
+      <div class="eco" id="eco">
         <div class="container">
           <div class="eco__title">Экономьте время и деньги,<span class="eco__title-color">сотрудничая с онлайн-бухгалтером</span></div>
           <div class="eco__list">
@@ -106,12 +109,12 @@
       <div class="feed">
         <div class="container">
           <div class="feed__title">Оставьте заявку прямо сейчас<span class="feed__title-color">и получите СДАЧУ НУЛЕВОЙ ОТЧЕТНОСТИ БЕСПЛАТНО</span></div>
-          <div class="text-center"><a class="feed__btn btn btn_white" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+          <div class="text-center"><a class="feed__btn btn btn_white" href="http://watch1k.in.ua/#callbackhunter"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
         </div>
       </div>
       <!--end feed-->
       <!--begin why-->
-      <div class="why" data-parallax="scroll" data-speed="0.5" data-image-src="img/bg/why.jpg">
+      <div class="why" id="why" data-parallax="scroll" data-speed="0.5" data-image-src="img/bg/why.jpg">
         <div class="container">
           <div class="why__title title">Почему это выгодно?
             <div class="title__color">Несколько причин, по которым вам стоит попробовать</div>
@@ -163,9 +166,7 @@
               <div class="why__list-text">Вы имеете доступ к аналитической информации, которая помогает повышать эффективность вашего бизнеса.</div>
             </div>
           </div>
-          <div class="text-center">
-            <div class="why__btn btn"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></div>
-          </div>
+          <div class="text-center"><a class="why__btn btn" href="http://watch1k.in.ua/#callbackhunter"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
         </div>
       </div>
       <!--end why-->
@@ -196,7 +197,7 @@
       </div>
       <!--end steps-->
       <!--begin rate-->
-      <div class="rate">
+      <div class="rate" id="rate">
         <div class="container">
           <div class="rate__title title title_dark">Выберите свой подходящий тариф
             <div class="title__color">Выберите свой, или оставьте заявку на расчет</div>
@@ -238,7 +239,7 @@
                       <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">3600 РУБЛЕЙ</span></div>
                     </div>
                   </div>
-                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                  <div class="text-center"><a class="card__btn btn" href="http://watch1k.in.ua/#callbackhunter"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
                 </div>
                 <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
               </div>
@@ -274,7 +275,7 @@
                       <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">6300 РУБЛЕЙ</span></div>
                     </div>
                   </div>
-                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                  <div class="text-center"><a class="card__btn btn" href="http://watch1k.in.ua/#callbackhunter"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
                 </div>
                 <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
               </div>
@@ -313,7 +314,7 @@
                     </div>
                   </div>
                   <div class="card__info">Стоимость учёта <br>каждого работника<span class="card__info-bold">200 рублей</span></div>
-                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                  <div class="text-center"><a class="card__btn btn" href="http://watch1k.in.ua/#callbackhunter"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
                 </div>
                 <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
               </div>
@@ -349,7 +350,7 @@
                       <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">10800 РУБЛЕЙ</span></div>
                     </div>
                   </div>
-                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                  <div class="text-center"><a class="card__btn btn" href="http://watch1k.in.ua/#callbackhunter"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
                 </div>
                 <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
               </div>
@@ -384,7 +385,7 @@
                       <div class="card__number-info">ЭКОНОМИЯ<span class="card__number-info-color">16200 РУБЛЕЙ</span></div>
                     </div>
                   </div>
-                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                  <div class="text-center"><a class="card__btn btn" href="http://watch1k.in.ua/#callbackhunter"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
                 </div>
                 <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
               </div>
@@ -422,7 +423,7 @@
                     </div>
                   </div>
                   <div class="card__info">Стоимость учёта <br>каждого работника<span class="card__info-bold">200 рублей</span></div>
-                  <div class="text-center"><a class="card__btn btn" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+                  <div class="text-center"><a class="card__btn btn" href="http://watch1k.in.ua/#callbackhunter"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
                 </div>
                 <div class="rate__card-desc">Тарифы для ОСНО <br>расчитываются индивидуально</div>
               </div>
@@ -437,16 +438,17 @@
           <div class="feed__man"><img class="feed__man-img" src="img/content/man.png" alt="image"></div>
           <div class="feed__content">
             <div class="feed__title feed__title_left">Удобная онлайн бухгалтерия В ВАШЕМ СМАРТФОНЕ<span class="feed__title-color">быть современным, чтобы стать лучшим.</span></div>
-            <div class="text-left"><a class="feed__button btn btn_white" href="#"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
+            <div class="text-left"><a class="feed__button btn btn_white" href="http://watch1k.in.ua/#callbackhunter"><span class="btn__text">ОСТАВИТЬ ЗАЯВКУ</span><i class="btn__fa btn__fa_right fa fa-chevron-right"></i></a></div>
           </div>
         </div>
       </div>
       <!--end feed-->
       <!--begin about-->
-      <div class="about">
+      <div class="about" id="about">
         <div class="about__container container">
           <div class="about__socials socials socials_about"><a class="socials__item" href="mailto:hello@lavrov.online"><i class="socials__fa fa fa-envelope-o"></i><span class="socials__text">hello@lavrov.online</span></a><a class="socials__item" href="tel:+79993796547"><i class="socials__fa fa fa-phone"></i><span class="socials__text">+7 999 379 6547</span></a>
-            <div class="socials__item"><i class="socials__fa fa fa-telegram"></i><span class="socials__text">Telegram: @lavrov_online</span></div>
+            <a
+              class="socials__item" href="https://telegram.me/lavrov_online" target="_blank"><i class="socials__fa fa fa-telegram"></i><span class="socials__text">Telegram: @lavrov_online</span></a>
           </div>
           <div class="about__auth">
             <div class="about__auth-img"></div>
@@ -461,7 +463,7 @@
     <div class="footer__top header__top">
       <div class="container">
         <div class="footer__top-text header__top-text">Персональный сайт частного бухгалтера Артёма Лаврова</div>
-        <nav class="footer__nav nav nav_footer"><a class="nav__link" href="#">МОИ УСЛУГИ</a><a class="nav__link" href="#">ЦЕНЫ И ТАРИФЫ</a><a class="nav__link" href="#">ПОЧЕМУ ЭТО ВЫГОДНО</a><a class="nav__link" href="#">КОНТАКТЫ</a></nav>
+        <nav class="footer__nav nav nav_footer"><a class="nav__link" href="#eco">МОИ УСЛУГИ</a><a class="nav__link" href="#rate">ЦЕНЫ И ТАРИФЫ</a><a class="nav__link" href="#why">ПОЧЕМУ ЭТО ВЫГОДНО</a><a class="nav__link" href="#about">КОНТАКТЫ</a></nav>
       </div>
     </div>
     <div class="footer__bottom">
