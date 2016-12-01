@@ -1,10 +1,10 @@
 extend includes/_layout
 block title
-	title LavrovonLine
+	title LavrovOnline
 block content
 	//begin screen
 	.screen
-		.screen__bg
+		.screen__bg(data-parallax="scroll" data-speed='0.5' data-image-src="img/bg/screen.jpg" data-position-y='top')
 		.screen__container.container
 			.screen__inner
 				.screen__title ОНЛАЙН БУХГАЛТЕР
@@ -76,7 +76,7 @@ block content
 	//end feed
 
 	//begin why
-	.why
+	.why(data-parallax="scroll" data-speed='0.5' data-image-src="img/bg/why.jpg")
 		.container
 			.why__title.title Почему это выгодно?
 				.title__color Несколько причин, по которым вам стоит попробовать
